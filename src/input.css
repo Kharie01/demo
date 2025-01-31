@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+.active{
+    color: white !important; 
+}
+
+section{
+    margin: 224px;
+}
+
+section h1{
+    font-family: Space Grotesk, serif;
+}
+
+section span{
+    color: #194BFD;
+    font-family: Space Grotesk, serif;
+}
+
+#a{
+    background: linear-gradient(90deg, rgba(25,75,253,1) 0%, rgba(173,19,251,1) 100%)
+}
+
+img{
+    width: 500.42px;
+    height: 493.91px;
+}
+
+.background{
+    width: 350em;
+    height: 25em;
+    top: 150px;
+    background: rgb(23,26,24);
+    background: linear-gradient(31deg, rgba(23,26,24,0.5718662464985995) 0%, rgba(23,23,26,1) 100%);
+}
+
+.border{
+    width: 96em;
+    height: 25em;
+    top: 480px;
+    border: 3px solid;
+    border-image: linear-gradient(31deg, rgba(23,26,24,0.57) 0%, rgba(23,23,26,1) 100%);
+    border-image-slice: 1;
+}
