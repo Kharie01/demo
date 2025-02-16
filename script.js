@@ -22,3 +22,37 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+function navbar() {
+    const navbar = document.querySelector('.navbar');
+    const navbutton = document.querySelector('.navbutton');
+    const navbuttonclose = document.querySelector('.navbuttonclose');
+
+    navbar.classList.remove('hidden'); // Show navbar
+    navbar.classList.add('flex'); 
+    navbutton.classList.add('hidden'); // Hide menu button
+    navbuttonclose.classList.remove('hidden'); // Show close button
+}
+
+function navbarclose() {
+    const navbar = document.querySelector('.navbar');
+    const navbuttonclose = document.querySelector('.navbuttonclose');
+    const navbutton = document.querySelector('.navbutton');
+
+    navbar.classList.add('hidden'); // Hide navbar
+    navbar.classList.remove('flex'); 
+    navbuttonclose.classList.add('hidden'); // Hide close button
+    navbutton.classList.remove('hidden'); // Show menu button
+}
+
+// Hide mobile menu button on larger screens
+window.addEventListener('resize', function () {
+    if (window.innerWidth >= 768) {
+        document.querySelector('.navbutton').classList.add('hidden'); 
+        document.querySelector('.navbuttonclose').classList.add('hidden'); 
+        document.querySelector('.navbar').classList.remove('hidden'); // Ensure navbar stays visible
+    } else {
+        document.querySelector('.navbutton').classList.remove('hidden'); 
+        document.querySelector('.navbar').classList.add('hidden'); // Hide menu again if on small screen
+    }
+});

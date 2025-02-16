@@ -1,1 +1,1 @@
-
+I am Kharie Ladignon, currently studying at NEUST and enrolled in the Bachelor of Science in Information Technology program.<br> I am an aspiring full-stack developer, passionate about learning and building my skills in web development and programming.
